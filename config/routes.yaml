@@ -1,3 +1,9 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+summary:
+    path: /api/summary
+    controller: App\Controller\SumController::makeSum
+    methods: [POST]
+
+getSummary:
+  path: /api/get-summary
+  controller: App\Controller\SumController::getLastsResults
+  
